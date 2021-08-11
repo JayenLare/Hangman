@@ -104,7 +104,7 @@ def playGame(word):
           attempts -= 1
           alreadyGuessed.append(guess)
           display(attempts,blanks)
-      # If word guessed is not the word, attempts left decreases by 1 
+      # If word player 2 guessed is not the correct word, attempts left decreases by 1 
       else:
         print(guess + " is not the correct word.")
         attempts -= 1
@@ -114,7 +114,7 @@ def playGame(word):
     else:
       print("Invalid guess...")
       display(attempts,blanks)
-  # Player 2 could not guess the word
+  # Player 2 ran out of attempts and did not guess the word 
   if wordGuessed == False:
     print("You've run out of attempts...")
     print("The correct word was " + word)
@@ -126,9 +126,10 @@ def main():
   print("Player 1 enter a word for player 2 to guess...")
   # Loops until player 1 enters a valid word
   while flag == True:
+    # Hides word from player 2 using imported getpass function
     word = getpass("Your word will be hidden: ")
     if word.isalpha() == False :
-        print("Sorry, invaild word.")
+        print("Sorry, invalid word.")
         print("Please enter a different word...")
     else:
       flag = False
@@ -142,7 +143,7 @@ def main():
     while flag == True:
       word = getpass("Your word will be hidden: ")
       if word.isalpha() == False :
-          print("Sorry, invaild word.")
+          print("Sorry, invalid word.")
           print("Please enter a different word...")
       else:
         flag = False
