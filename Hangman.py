@@ -1,3 +1,6 @@
+# Simple hangman game using Python --- Jayen Lare
+
+# Import getpass function from getpass module
 from getpass import getpass
 
 # Function that returns the current hangman board
