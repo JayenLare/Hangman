@@ -18,11 +18,11 @@ This program is written in Python and allows two players to compete in a game of
     ```
 3. Change permissions:
     ```sh
-    chmod 777 Hangman.py
+    chmod 777 hangman.py
     ```
 4. Run the program:
     ```sh
-    python3 Hangman.py
+    python3 hangman.py
     ```
 
 ## Usage
